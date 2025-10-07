@@ -39,8 +39,12 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* Use normal block layout so section backgrounds and full-width elements
+     expand to the full viewport width. Avoid flex on body which causes the
+     app root to size to its content and reveal the html (:root) background
+     on very wide screens. */
+  display: block;
+  width: 100vw;
   min-width: 320px;
   min-height: 100vh;
 }
