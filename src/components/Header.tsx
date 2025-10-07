@@ -11,8 +11,8 @@ export function Header() {
 
   return (
     <header className={`${headerBase} ${headerBg}`}>
-      <div className={`max-w-7xl mx-auto flex justify-between items-center px-6 ${innerPadding}`}>
-        {/* Company Logo */}
+  <div className={`max-w-8xl mx-auto flex justify-between items-center px-4 md:px-6 ${innerPadding}`}>
+        {/* Company Logo (hide the text on small screens so only the logo shows) */}
         <div className="flex items-center space-x-3">
           <img src="/logo.png" alt="Company Logo" className="h-14 w-auto" />
           <span className={`text-xl font-bold ${textColor}`}>Longhorn Innovations</span>
@@ -20,7 +20,7 @@ export function Header() {
 
         {/* Contact Section */}
         <div className="flex items-center space-x-4">
-          <span className={`text-lg font-medium ${textColor}`}>
+          <span className={`text-lg font-medium ${textColor} hidden sm:inline`}>
             {phoneNumber}
           </span>
 

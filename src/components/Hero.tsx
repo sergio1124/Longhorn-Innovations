@@ -42,7 +42,7 @@ export function Hero({ videoFiles }: { videoFiles?: string[] }) {
   }, [index, sources]);
 
   return (
-    <section className="relative bg-primary text-white text-center py-50 px-6 overflow-hidden mt-16 md:mt-20 lg:mt-24">
+    <section className="relative bg-primary text-white text-center py-50 px-6 overflow-hidden mt-16 md:mt-20 lg:mt-26">
       {/* Background video - put 1..N files in public/videos and optionally pass a videoFiles prop */}
       <video
         ref={videoRef}
